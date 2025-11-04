@@ -1,4 +1,4 @@
-<?php
+<?php //deneme git
 session_start();
 if (!isset($_SESSION["UserName"]) || !isset($_SESSION["sapSession"])) {
     header("Location: config/login.php");
