@@ -11,7 +11,7 @@ $sap = new SAPConnect();
 $whsCode = $_SESSION["WhsCode"] ?? ''; 
 
 // 🔹 SAP çağrısı
-$data = $sap->get("SQLQueries('OPOR_LIST')/List?value1='SUPPLY'&value2='{$whsCode}'");  
+$data = $sap->get("SQLQueries('OPOR_LIST')/List?value1='SUPPLY'&value2='{$whsCode}'");   
 
 // 🔹 Gelen JSON’dan verileri al
 $rows = $data['response']['value'] ?? [];  
@@ -182,7 +182,7 @@ exit; */
         
         .single-select-dropdown.show {
             display: block;
-        }
+        } 
         
         .single-select-option {
             padding: 8px 12px;
